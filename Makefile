@@ -22,8 +22,8 @@ config.h:
 	$(CC) $(STCFLAGS) -c $<
 
 st.o: config.h st.h win.h
-x.o: arg.h config.h st.h win.h
-boxdraw.o: config.h st.h boxdraw_data.h
+x.o: arg.h config.h st.h win.h modus-operandi.h
+boxdraw.o: config.h st.h boxdraw_data.h modus-operandi.h
 
 $(OBJ): config.h config.mk
 
